@@ -1,0 +1,41 @@
+﻿<Window x:Class="Charts.View.AboutProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Charts.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="About" Height="150" Width="250" WindowStartupLocation ="CenterScreen" WindowStyle="None" ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF1480EC" Offset="0.939"/>
+                <GradientStop Color="#FF73A5F1" Offset="0.153"/>
+                <GradientStop Color="#FF528FF7" Offset="0.612"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="120" >
+            <TextBlock HorizontalAlignment="Center">
+                Программма ChartView v1.2 
+                <LineBreak />
+                Product by Oshlakov Yegor
+                <LineBreak />
+                <Hyperlink  NavigateUri="https://github.com/trueStape" RequestNavigate="Hyperlink_RequestNavigate" >
+                 Профиль GitHub
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+
+        <Button Background="{x:Null}" Height="39" Width="200" Foreground="Black" BorderBrush="{x:Null}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Close" Margin="0,0,0,20">
+                <Button.ToolTip>
+                    <ToolTip Placement="Mouse" Content="Закрыть"/>
+                </Button.ToolTip>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="150" Height="40">
+                    <materialDesign:PackIcon Kind="Reply" Width="30" Height="30" VerticalAlignment="Center" Margin="0" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Закрыть" VerticalAlignment="Center" Margin="20 10" HorizontalAlignment="Center" FontWeight="Normal"  />
+                </StackPanel>
+        </Button>
+     </Grid>
+</Window>

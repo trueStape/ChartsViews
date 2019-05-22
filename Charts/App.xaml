@@ -1,0 +1,37 @@
+﻿<Application x:Class="Charts.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Charts"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BitmapImage x:Key="Nvc" UriSource="Resources/Logo_NVC.png"></BitmapImage>
+            <BitmapImage x:Key="Pgups" UriSource="Resources/pgups.png"></BitmapImage>
+
+            <Style x:Key="EuropeFonts">
+                <Setter Property="TextElement.FontFamily" Value="/Fonts/#Europe_Ext"/>
+                <Setter Property="TextElement.FontSize" Value="18" />
+                <Setter Property="TextElement.FontWeight" Value="Bold"/>
+                <Setter Property="TextElement.Foreground" Value="DarkBlue"/>
+            </Style>
+            <Style x:Key="EuropeFontsNumber">
+                <Setter Property="TextElement.FontFamily" Value="/Fonts/#Europe_Ext"/>
+                <Setter Property="TextElement.FontSize" Value="20" />
+                <Setter Property="TextElement.FontWeight" Value="Bold"/>
+                <Setter Property="TextElement.Foreground" Value="Red"/>
+            </Style>
+            <Style x:Key="EuropeFontsNumberSignal">
+                <Setter Property="TextElement.FontFamily" Value="/Fonts/#Europe_Ext"/>
+                <Setter Property="TextElement.FontSize" Value="15" />
+                <Setter Property="TextElement.FontWeight" Value="Bold"/>
+                <Setter Property="TextElement.Foreground" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+        </Application.Resources>
+</Application>
