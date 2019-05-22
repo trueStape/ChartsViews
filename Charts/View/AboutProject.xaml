@@ -22,7 +22,7 @@
                 <LineBreak />
                 Product by Oshlakov Yegor
                 <LineBreak />
-                <Hyperlink  NavigateUri="https://github.com/trueStape" RequestNavigate="Hyperlink_RequestNavigate" >
+                <Hyperlink  NavigateUri="https://github.com/trueStape/ChartsViews" RequestNavigate="Hyperlink_RequestNavigate" >
                  Профиль GitHub
                 </Hyperlink>
             </TextBlock>
